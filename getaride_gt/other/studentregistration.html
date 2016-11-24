@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link href="css/stregform.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script src = "js/validreg.js" > </script>
+<style>
+#header-wrapper
+{
+	background: url(images/regbg.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+body {
+		margin: 0px;
+	padding: 0px;
+	background-color: #00254c;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+	color: rgba(0,0,255,.8);
+}
+#errors {
+	font-size: 200%;
+    color: red;
+    font-weight: bold;
+}	background-color: #eeb211;
+</style>
+
+
+
+</head>
+
+<body>
+<!--header portion-->
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">GT Get A ride</a></h1>
+				<p>Design by <a href="http://google.com" rel="nofollow">R&D</a></p>
+			</div>
+			<div id="social">
+				<ul class="contact">
+					<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+					<li><a href="#" class="icon icon-facebook"><span></span></a></li>
+					<li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+					<li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+					<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="index.html" accesskey="1" title="">Homepage</a></li>
+				<li><a href="#" accesskey="1" title="">Services</a></li>
+				<li><a href="#" accesskey="2" title="">Our Clients</a></li>
+				<li><a href="#" accesskey="3" title="">About Us</a></li>
+				<li class="current_page_item"><a href="student_registration.html" accesskey="4" title="">Student Register</a></li>
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!--welcome message-->
+	<div id="welcome-wrapper">
+		<div id="welcome">
+			<p>This is a <strong>Web Application</strong>, is to provide a service for the incoming students. <a href="http://ggc.edu" rel="nofollow">Georgia Tech</a>.
+		</div>
+	</div>
+
+		<!--body-->
+	<div id="body" class="container">
+		
+		<br />
+
+		<div class="inner contact">
+		
+		<div id ="errors" >
+		</div>
+		
+                <!-- Form Area -->
+                <div class="contact-form">
+				<!--  Inputs -->
+
+                  <div class="col-xs-4 col-xs-offset-4">
+                    <!-- Form -->
+                    <form  action="#" onsubmit="return stregister();" method="post" >
+                        
+                            <!-- Last Name -->
+                            <input type="text" name="lname" id="lname"  class="form" placeholder="Last Name" />
+							 <!-- FirstName -->
+                            <input type="text" name="fname" id="fname"  class="form" placeholder="First Name" />
+                            <!-- Phone -->
+                            <input type="text" name="phone" id="phone"  class="form" placeholder="phone" />
+							 <!-- gender -->
+							 <div class="row">
+							 &nbsp; <input type="radio" name="gender" id="male" value="male" > Male
+							 <input type="radio" name="gender" id="female" value="female"> Female
+							 <input type="radio" name="gender" id="other" value="other"> Other
+
+							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <!--Level-->
+							<select>
+								<option value="Level">Select Level</option>
+								<option value="undergrad">undergrad</option>
+								<option value="grad">grad</option>
+								<option value="visiting scholar">visiting scholar</option>
+
+							</select>
+							</div>
+							<br><br />
+							<!-- major -->
+                            <input type="text" name="major" id="major"  class="form" placeholder="Major" />
+							<!-- Email -->
+                            <input type="email" name="email" id="email"  class="form" placeholder="Email" />
+							<!-- Email -->
+                            <input type="email" name="secemail" id="secemail"  class="form" placeholder="Reenter Email" />
+							<!-- login -->
+                            <input type="text" name="login" id="login"  class="form" placeholder="Login" />
+							<!-- Password -->
+                            <input type="password" name="Pwd1" id="Pwd1"  class="form" placeholder="Password" />
+							<!-- Password -->
+                            <input type="password" name="Pwd2" id="Pwd2"  class="form" placeholder="Password" />
+							<!--Level-->
+							<!--Level-->
+
+							 <!-- Send Button -->
+                            <button type="submit" id="submit" name="submit" onclick="stregister()" class="form-btn semibold">Register</button>
+
+						</div><!-- End  Inputs -->
+
+
+
+                        <!-- Clear -->
+                        <div class="clear"></div>
+                    </form>
+
+                  
+
+                </div><!-- End Contact Form Area -->
+      </div><!-- End Inner -->
+
+
+
+
+<div id="portfolio" class="container">
+
+<div class="title">
+				<h2>Aenean elementum</h2>
+				<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer">
+	<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+
+</div>
+</body>
+</html>
